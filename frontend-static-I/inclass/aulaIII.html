@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Aula III - Formulários e Tags Semânticas</title>
+    </head>
+
+    <body>
+        <form method="post">
+            <div>
+                <label for="name">Nome:</label>
+                <input id="name" name="name" placeholder="Digite o seu nome completo" type="text" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" name="email" placeholder="Digite o seu e-mail" type="email" required>
+            </div>
+
+            <div>
+                <label for="accept">Aceite os termos:</label>
+                <input id="accept" name="accept" type="checkbox" required>
+            </div>
+
+            <div>
+                O que você prefere?
+
+                <input id="chooseI" name="fruta-preferida" value="banana" type="radio">
+                <label for="chooseI">Banana</label>
+
+                <input id="chooseII" name="fruta-preferida" value="maca" type="radio">
+                <label for="chooseII">Maçã</label>
+
+                <input id="chooseIII" name="fruta-preferida" value="morango" type="radio" checked>
+                <label for="chooseIII">Morango</label>
+            </div>
+
+            <div>
+                <label for="sugests">Sugestões:</label>
+                <textarea id="sugests" name="sugests" placeholder="Dê alguma sugestão!" required></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+
+</html>
