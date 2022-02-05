@@ -1,0 +1,61 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#relatorio {
+    border: 3px solid red;
+
+    border-width: 1px 10px 20px 10px;
+    border-style: dashed;
+    border-color: purple;
+
+    /*
+    border-top-width: 1px;
+    border-right-width: 10px;
+    border-bottom-width: 20px;
+    border-left-width: 10px;
+    */
+
+    padding-left: 10px;
+    margin: auto;
+    max-width: 50vh;
+}
+
+article #relatorio {
+    border: 3px solid red;
+
+    border-width: 1px 10px 20px 10px;
+    border-style: dashed;
+    border-color: purple;
+
+    /*
+    border-top-width: 1px;
+    border-right-width: 10px;
+    border-bottom-width: 20px;
+    border-left-width: 10px;
+    */
+
+    padding-left: 10px;
+    margin: auto;
+    max-width: 50vh;
+}
+
+#relatorio section {
+    background-color: blue;
+}
+
+section > span > h1 {
+    color: red;
+}
+
+#relatorio section p {
+    color: yellow;
+}
+
+p, h1 {
+    font-family: Arial;
+}
+
+h1:hover {
+    color: turquoise;
+}

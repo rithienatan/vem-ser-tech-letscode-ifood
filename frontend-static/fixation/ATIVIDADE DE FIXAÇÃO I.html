@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Title -->
+    <title>Rithie Natan Carvalhaes Prado</title>
+
+    <!-- Meta and configs -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Rithie Natan">
+    <meta name="keywords" content="Portfolio, HTML, CSS">
+
+    <!-- Stylish -->
+    <style>
+        /* ---- General Styles ---- */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 0.5em;
+        }
+
+        a img {
+            width: 2.5em;
+            height: 2.5em;
+        }
+
+        hr
+        { border: 0.05em solid rgba(255, 255, 255, 0.7); }
+
+        /* ---- Main content ---- */
+        .content
+        {
+            margin: 1.5rem 4rem 1.5rem 4rem;
+            padding: 2rem 2rem 1rem 2rem;
+            width: 50%;
+            height: 50%;
+            border: 0.1em solid rgba(0, 0, 0, 0.7);
+            border-radius: 1em;
+        }
+
+        /* ---- Avatar and name part ---- */
+        .avatar--name
+        { display: flex; }
+
+        .avatar--name img
+        { border-radius: 10em; }
+
+        .avatar--name h1
+        { 
+            margin: 0 0 0 1em; 
+            padding-top: 5.8em;
+            display: flex;
+            justify-content: left; 
+        }
+
+        /* ---- Presentation part ---- */
+        .presentation
+        { margin: 3rem 0 0 0; }
+
+        .presentation h2
+        { margin: 0 0 0 0; padding: 0 0 0.7em 0; }
+
+        .presentation hr
+        { margin: 0 0 1.5em 0; }
+
+        /* ---- curiosity part ---- */
+        .curiosity
+        { margin: 2.5rem 0 0 0; }
+
+        .curiosity h2
+        { margin: 0 0 0 0; padding: 0 0 0.7em 0; }
+
+        .curiosity hr
+        { margin: 0 0 1.5em 0; }
+
+        .curiosity ul
+        { list-style-type: none; }
+
+        .curiosity ul li
+        { margin-bottom: 0.7em; } 
+
+        .curiosity ul li img
+        { width: 1rem; height: 1rem; margin-right: 1em; }
+
+        /* ---- social part ---- */
+        .social
+        { margin: 2.5rem 0 0 0; }
+
+        .social h2
+        { margin: 0 0 0 0; padding: 0 0 0.7em 0; }
+
+        .social hr
+        { margin: 0 0 1.5em 0; }
+
+        /* --- consideration part ---- */
+        .considerations
+        { text-align: end; }
+
+        .considerations a i
+        { color: black; }
+
+        /* ---- particles.js container ---- */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 150, 255, 0.5);
+            background-image: linear-gradient(rgba(0, 150, 255, 0.5), rgba(255, 255, 255, 1));
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            z-index: -1;
+        }
+    </style>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <!-- Avatar + Name -->
+        <div class="avatar--name">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3-glGSPx3D35ds4zunsjvucCzsLZh0ePL2t1_IaDUNm7e-HCZfmkD0B-3WpOI8L2XxkI&usqp=CAU">
+            <h1>Rithie Natan Carvalhaes Prado</h1>
+        </div>
+
+        <hr>
+
+        <!-- Presentation -->
+        <div class="presentation">
+            <h2>Apresentação</h2>
+            <hr>
+
+            <p><b>Hello guys! o/</b></p>
+            <p>
+                Building Hired, Corp. Achieving my graduation. Enjoying researching mobile network. Dreaming of Master's
+                degree.
+            </p>
+        </div>
+
+        <!-- Features -->
+        <div class="curiosity">
+            <h2>Curiosidades</h2>
+            <hr>
+
+            <ul>
+                <li>
+                    <img src="data:image/png;base64,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">
+                    8º Period - Science Computer student at Pontifical Catholic University of Minas Gerais
+                </li>
+                <li>
+                    <img src="data:image/png;base64,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">
+                    I'm currently learning and researching 5G network.
+                </li>
+                <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEUAAAD///8wMDDPz89hYWGWlpZTU1Pw8PAYGBjj4+P7+/vf39/S0tLc3NzY2NhkZGRaWlpOTk5xcXFHR0e7u7tpaWnDw8Pp6ekfHx+urq6kpKQTExOBgYGHh4c1NTU/Pz+bm5uPj494eHgeHh7VTC0yAAADbklEQVR4nO3d3VLiQBBA4QGMUQTBgCgqLK7v/46rm9raC3ogmekw3dQ591v2V3ETfmI6jK69UHqAwUPoP4T+Q+g/hP5D6D+E/kPoP4T+G1A4rR9mky7NHurpcGMMJZxXy9CnZTUfaJJhhOunXry21XqQWYYQPv5K8P20fxxgmgGEVaLvp0/9cdSF0+cMYAjP6uccdeFtFjCEW+2BtIV5R/DvUVSeSFn4lg0M4U13JF3hvQIwhHvVmXSFNyrChepMqsJHFWAIqi9vVIX5p5m2RnMoTeFUCRiC5kVRU7hRE24Up9IU7tSEO8WpNIUpbyjknhSn0hSO1YR7xakUhdNXNeGr4qlGUVjfHU06PlTnOxwf+7tab6xhhd3eKBy/HUHYJ4Q9QhgNYV4Ie4QwGsK8EPYIYTSEeSHsEcJoboTTLzXh1yU/xXjZVM3ipkvCrQmvXf7lQvh8Z9npJy6aavOSKdzqfUI4VKtthlDj28BLdPIbxxPC5FsqLt94liLclh67V/HDGBUeSs/cs8++Qi//Bf9X9RNOSs+bUOQrOVmo913nJZNfCMnC36WHTUq+w0EUPpSeNTHxmiEKfR7CyO1UkrB+Lz1qatKLVEm4Lj1octJ1XxJ+lB40OenXVBKuSg+anPS+UhD6vBi2Xb9QuK1RENalx8xIuBVeEL6UHjOjCUKE5kOI0H4IEdqvm1DnD1/KhBCh/RAitB9ChPZDiNB+CBHaDyFC+3UTer0T4yeECO2HEKH9ECK0H0KE9usmnJceMyOECO2HEKH9ECK0H0KE9kOI0H7dhFpP5S4RQoT2Q4jQfggR2g8hQvshRGg/hAjth7BtVnrMjBAitB9ChPZDiNB+CBHaDyFC+yFs8/jE+X8hRGg/hAjth7DN8xVf2HBxZc/FuP5nsgurZqTn6rtd4BHeu20OGC1KD5qctEtHEh5KD5rcoaPQ76lGONHIu4KEXY0uWkoYUej1mi9c72M7u443g3pI3noqC30+0lteSRrZnedrvWNbZB9pROhw59NHRBITjprSE/esiUGiwtGu9My92kUdceFoc7yF2mrvkf2VZ4Sj2sth3J1a431K+G2sHLzP+Dy9uPq08Lv5tlntxzbbr5rt/BzgrNB9CP2H0H8I/YfQfwj9h9B/CP2H0H8I/YfQfwj9h9B/CP13/cI/yaBv9N9EeCkAAAAASUVORK5CYII=">
+                    CTO & Co-Founder - Hired, Corp.
+                </li>
+                <li>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAABWVlbu7u76+vp+fn7V1dX8/Pzg4ODZ2dm2traurq7z8/NhYWE1NTWxsbHp6elPT08pKSmZmZnMzMyKiopJSUm/v7+jo6Nvb28dHR1BQUE8PDwxMTEVFRWVlZVnZ2d3d3fGxsYMDAwaGhqNjY2oWGuzAAAEmUlEQVR4nO3di1LiQBCFYQ4QV0FQUEBuShZ8/1fcuFvWinLJJH05SfX/BPmqqGHohEmnE0VRFEVRFEVRFEVRFEVRFMnVv/e+AsXuXkYrfDTOHnreFyPf4/s/3WeTQd/7kkTrZfjRdOh9VYINf/o+Wt95X5hQ/dFpYFHWio9qb30WCBwG3pdXv/vtBWBR99H7Cuu2uQwsevK+xHrlV4HA9tn7Kmu0KAEsyhq70+mvruv+9vrgfakVeyoJLJo0c8UpDyx6++V9uekNkoRNXHEmaUJg2bA9Ti8VWNSsFee5ghCTJm3HX6oIgZn3dZdvWU2IVWNWnPO/mq61a8iUo1tZCDRjAFBHiHkTVpxawmI7zr/HqSnEauEtuFZdITAiX3HqC4EXb8TFJIQY33gzLiQiLPY4vAMAISFWtCNHKSHvyFFOCDxRfjlKCjlXHFEhkPMNAISFAN2KIy5E99bbdJy8EHjzRh2lIcSUaQCgIgSWPNtxJSHRyFFNiAnJiqMnZBk5agqx+u3N6ygLKUaOykKCkaO6EBvnkaO+sFhxXLfjFkJMPUeOJkLXkaOR0HHkaCbExmkAYCf0uslhKQQ8VhxbIUb223FjocNTjuZC85GjvRDITW9yeAixtxw5ughNR45OQsORo5vQbOToJwSWJiuOpxB7i5GjqxCY6684zsJixdEeALgLsVUeOfoLgZ3qisMg1B05cgg1n3IkEQIzrQEAjRBQ+uIgEirNOJiEOrfjqIQYtV6oQSQTKnxQ2YTyyw2dENJbOD5h3nohhJ/EJRRmrRe+yv4mJhRC9icxo1D2Y8oonLdeCNHHGiiFot8XlELRkQalUPSOBqVQ9C4xpVB0YkMpbP1KMxX9AcUolB1lMAplH7lhFMpO+AmFa1Ego1D4YRtCoSyQUCg9TqQT7oSBdMKD+CPvbEL5RzPJhArPZXAJNR48YRJuVe5zEwmFZ910wrXW498sQr0/DXEIR4onvzAID6rP7hEI1Z6GIhGqnxTqLdT/I7Sv0OLEXk+hzanLjkKjg7PchGannzsJDQ+w8xFavoXAQ2j7H0sHofE/882F5ue5GAsdDuW1FSpvst2FPmdjGQqdThsyE7qdUWckdDxn0EboeVakhdDhuA9bofOZrepC93cLKAu9jk4yEzKcuK8p5Hhrgp7Q9Ri6L6kJ31lO9lYSEr2BRkfofqTnlzSENqeylE1eOGY6zLujIOQ6kL0jLiR8jYeo8JXuxQgdWSHn+3TlhFuer8CjxIQMm+yTCQl3fCvMZyLCPcPp8ueSEHK8IeBc9YUGR67VqraQaZN9sppCrk32yWoJ2TbZJ6sj5HzP2veqvw+Y7c1V58qqAknmTNd7qObLWOZM17up4lN7JlulfTqQdpN9ujzVxzHJTug5zccyyU5pnAKkmWSntCjvWzfkK/B7Zbc1e/pN9rluywHzpq0wXxqW8FG9ljK961s3ukl2asvLPsJJdnKzC74D4yQ7vcFZIOFrmqv1ePpLY006ya7UYv7Dt2nHB/R/N9nRL42cedBbudvh2647n49mwzZ9PKMoiqIoiqIoiqIoiqIoiqLm9QfLUFe4shG+ygAAAABJRU5ErkJggg==">
+                    I like to play guitar, games, swim and do others stuffs in my spare time.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Social media -->
+        <div class="social">
+            <h2>Redes Sociais</h2>
+            <hr>
+
+            <a href="https://www.linkedin.com/in/rithie-natan-470181b0/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" target="_blank">
+            </a>
+            <a href="https://github.com/rithienatan">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+            </a>
+        </div>
+
+        <!-- Considerations -->
+        <div class=considerations>
+            <a href="https://vincentgarreau.com/particles.js/">
+                <i><u>Particle.js background powered by Vincent Garreau</u></i>
+            </a>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <script>
+        /* ---- particles.js config ---- */
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                    "distance": 100,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "top",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": false,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</footer>
+
+</html>

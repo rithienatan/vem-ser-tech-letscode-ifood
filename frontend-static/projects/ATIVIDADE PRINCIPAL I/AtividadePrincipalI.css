@@ -1,0 +1,143 @@
+/* ---- General Styles ---- */
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+body {
+    font-family: 'Yellowtail', cursive; 
+    background-color: #1C1C1C;
+    background-image: linear-gradient(#1C1C1C, #3D3D3D);
+    color: #F7F7FF;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav 
+{ 
+    background-color: black;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 1);
+
+    padding: 0 25rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+main
+{ padding: 0 25rem; }
+
+footer
+{
+    background-color: black;
+
+    padding: 0 25rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+section
+{ margin: 2rem 0; }
+
+a 
+{ color: #F7F7FF; text-decoration: none; font-size: x-large; }
+
+a:hover 
+{ color: rgba(255, 255, 255, 0.7); }
+
+ul
+{ list-style-type: none; }
+
+form
+{ padding: 0 5em; }
+
+form > ul
+{ margin: 0; padding: 0;  }
+
+form > ul > li
+{ margin: 0.5em 0; }
+
+form > ul > li > button
+{ width: 100%; height: 3em; }
+
+input 
+{ 
+    width: 100%; 
+    height: 2.3rem; 
+
+    border: 0.2em solid #1C1C1C;
+    border-radius: 0.4em;
+}
+
+input:hover
+{ border: 0.2em solid #279AF1; }
+
+textarea
+{ 
+    width: 100%; 
+    height: 20rem;
+
+    border: 0.2em solid #1C1C1C;
+    border-radius: 0.4em;
+}
+
+textarea:hover
+{ border: 0.2em solid #279AF1; }
+
+button
+{ 
+    color: #F7F7FF;
+    background-color: #F75C03; 
+
+    border: 0.2em solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.4em;
+}
+
+button:hover
+{ background-color: rgba(247, 92, 3, 0.9); }
+
+
+/*---------- Headers styles ----------*/
+.header--img
+{ width: 30%; height: 100%; }
+
+.header--navigation
+{ margin: 2.3em 0 2.3em 0; display: flex; }
+
+.header--navigation > li
+{ margin-left: 5em; }
+
+
+/*---------- Main-content styles ----------*/
+.bounty--container
+{   
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0 2.5em; 
+}
+
+.bounty--card
+{
+    margin: 0.5em;
+
+    width: 20rem;
+    
+    border: 0.2em solid #279AF1;
+    border-radius: 0.4em;
+}
+
+.bounty--card:hover
+{ border: 0.2em solid rgba(39, 154, 241, 0.5); }
+
+.bounty--card > img
+{ width: 100%; height: 30rem; }
+
+.card--info
+{ padding: 0 1em; }
+
+
+/*---------- Footer styles ----------*/
+.footer--navigation
+{ padding: 0; }
+
+.footer--img
+{ width: 20%; height: 20%; }

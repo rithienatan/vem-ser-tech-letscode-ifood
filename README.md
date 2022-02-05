@@ -3,6 +3,6 @@
 Web full-stack course.
 
 
-### Módulos
+### Modules
 
-- Front-End Static I
+- Front-End Static
