@@ -1,42 +1,667 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <!-- Meta configs -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Meta configs -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Flavius Costa">
+    <meta name="author" content="Rithie Natan">
+    <meta name="author" content="Thatyara Alves">
+    <meta name="author" content="Wesley Matheus">
+
+    <meta name="keywords" content="Bootstrap, Arte">
+
+
+    <!-- Title -->
+    <title>Exposição de Arte</title>
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="AtividadeFinal.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="ATIVIDADE FINAL.html"><img src="imagens/Logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  data-bs-toggle="modal" 
+                  data-bs-target="#sobre"
+                >
+                  Sobre Nós
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#galeria">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#fale"
+                >
+                  Entre em Contato Conosco
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+      <section class="galeria" id="galeria">
+        <h1>Alfons Maria Mucha - Obras selecionadas</h1>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="column">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro1"><img
+                  src="imagens/byzantine-head-the-blonde-1897.jpg" /></a>
+
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro2"><img src="imagens/flower-1897.jpg" /></a>
+
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro3"><img src="imagens/laurel-1901.jpg" /></a>
+
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro4"><img src="imagens/lily-1898.jpg" /></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro5"><img src="imagens/job-1896.jpg" /></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro6"><img src="imagens/dusk-1899.jpg" /></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro7"><img
+                  src="imagens/cropped-print-of-four-panels-each-depicting-one-of-the-four-seasons-personified-by-a-woman-1897.jpg"></a>
+            </div>
+
+            <div class="column">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro8"><img src="imagens/Reverie-1897.jpg" /></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro9"><img src="imagens/salome-1897.jpg" /></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro10"><img
+                  src="imagens/salon-of-the-hundred-1896.jpg" /></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro11"><img src="imagens/spring-1896.jpg" /></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro12"><img
+                  src="imagens/the-judgement-of-paris-1895.jpg" alt=""></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro13"><img src="imagens/a-quartier-latin-1898.jpg"
+                  alt=""></a>
+            </div>
+
+            <div class="column">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro14"><img src="imagens/summer-1896.jpg" /></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro15"><img src="imagens/the-autumn-1896.jpg" /></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro16"><img src="imagens/ruby-1899.jpg" /></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro17"><img src="imagens/zodiac-1896.jpg" /></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro18"><img src="imagens/Dawn-1899.jpg"></a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#quadro19"><img
+                  src="imagens/the-times-of-the-day-1899.jpg"></a>
+            </div>
+          </div>
+        </div>
         
-        <meta name="author" content="Flavius Costa">
-        <meta name="author" content="Rithie Natan">
-        <meta name="author" content="Thatyara Alves">
-        <meta name="author" content="Wesley Matheus"> 
+        <!-- Modal Quadro I -->
+        <div class="modal fade" id="quadro1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Bizantine head blonde (1897)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/byzantine-head-the-blonde-1897.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Blond usa um lenço branco no cabelo enfeitado com joias e um disco de metal ornamentado 
+                  com franjas de pérolas. Foi com base nesses designs altamente originais que Fouquet decidiu 
+                  contar com a ajuda de Mucha para sua coleção para a Exposição Universal de 1900.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <meta name="keywords" content="Bootstrap">
+        <!-- Modal Quadro II -->
+        <div class="modal fade" id="quadro2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Flower (1897)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/flower-1897.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>A flor foi pintada pelo famoso artista tcheco Alphonse Mucha (1860-1939) em 1897. 
+                  A mídia criada para esta obra foi a litografia com um gênero alegórico.
+                 Este trabalho foi criado no auge da moda art nouveau, que ficou famosa especialmente na França 
+                 e nas cidades culturais europeias. Mucha, que morou em Paris por um tempo, projetou e criou muitas 
+                 obras de arte para cartões postais e anúncios.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro III -->
+        <div class="modal fade" id="quadro3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Laurel (1901)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/laurel-1901.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>
+                  A posição da cabeça da menina, com os olhos levemente abaixados, é a mesma de três dos dez painéis de vidro que Mucha projetou no mesmo ano para o interior da Boutique Fouquet.
+                  O motivo de folha em torno da moldura circular lembra a moldura decorativa do Zodíaco (1896).
+                  Este painel foi posteriormente usado como calendário para a empresa de sinalização Dewez.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro IV -->
+        <div class="modal fade" id="quadro4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Lily (1898)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/lily-1898.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Esta obra, faz parte de uma série em que Mucha personifica quatro flores, Mucha usa um estilo naturalista com estilização mínima.
+                  Duas das aquarelas originais foram exibidas na exposição individual de Mucha no Salon des Cent em 1897, mas o conjunto inteiro não se tornou disponível até o ano seguinte.
+                  A série esgotou muito rapidamente e Champenois decidiu imprimir uma versão menor com todos os quatro painéis apresentados em uma única imagem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro V -->
+        <div class="modal fade" id="quadro5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Job (1896)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/job-1896.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Este é talvez um dos cartazes publicitários mais conhecidos de Mucha, 
+                  com inúmeras edições posteriormente publicadas em vários formatos para 
+                  mercados internacionais. Este pôster estabeleceu a imagem icônica da 
+                  'mulher Mucha' com seus redemoinhos de cabelo exageradamente abundante.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Qudro VI -->
+        <div class="modal fade" id="quadro6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Dusk (1899)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/dusk-1899.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Dusk faz parte de uma excelente série, The Times of the Day, 
+                  que inclui outras pinturas como Manhã, Dia, Tarde e Noite. Dusk 
+                  reivindicando seu lugar de maneira agradável, acentuado pela figura 
+                  feminina que se mistura lindamente ao fundo da folhagem e à luz fraca, 
+                  mas com seus traços fluidos que recebem um destaque sutil pela mão da 
+                  artista.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro VII -->
+        <div class="modal fade" id="quadro7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Cropped print of four panels each depicting one of
+                  the four seasons personified by a woman (1897) </h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid"
+                    src="imagens/cropped-print-of-four-panels-each-depicting-one-of-the-four-seasons-personified-by-a-woman-1897.jpg"
+                    alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Uma série de “quatro estações” de Alfons Mucha (mas não sua primeira série 
+                  criada em 1896); impressão recortada de quatro painéis, cada um representando 
+                  uma das quatro estações personificadas por uma mulher, originalmente impressa 
+                  por volta de 1897 e transformada no calendário “Chocolat Masson” e “Chocolat 
+                  Mexican” de 1897.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro VIII -->
+        <div class="modal fade" id="quadro8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Reverie (1897)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/Reverie-1897.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>A litografia Reverie foi executada em 1897, originalmente destinada a 
+                  ilustrar o calendário da empresa Champenois de 1898. A litografia tornou-se 
+                  instantaneamente popular e foi publicada na revista La Plume com o título 
+                  Reverie.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro IX -->
+        <div class="modal fade" id="quadro9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Salomé (1897)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/salome-1897.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>A Salome de Alphonse Mucha é erótica e exótica em seu figurino e cabelo 
+                  estilizado, um grampo Art Nouveau. Seus olhos semicerrados me encaram 
+                  provocativamente, refletindo o interesse de Mucha no novo campo da sugestão
+                  hipnótica.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro X -->
+        <div class="modal fade" id="quadro10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Salon of the hundred (1896)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/salon-of-the-hundred-1896.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Este cartaz anunciava a 20ª exposição do Salon des Cent realizada nas instalações da revista de arte La Plume.
+                  O Salon des Cent incluía obras litográficas à venda de artistas associados a La Plume, que incluíam Toulouse-Lautrec, Bonnard, Ensor e Grasset.
+                  Este cartaz, que garantiu o lugar de Mucha no grupo, introduziu seu estilo arquetípico baseado em linhas curvas, tons claros, cores achatadas e contornos fortes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro XI -->
+        <div class="modal fade" id="quadro11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Spring (1896)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/spring-1896.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Mucha personifica a primavera como uma figura de cabelos louros em um 
+                  vestido branco translúcido sob uma árvore em flor. A flor ecoa nas flores 
+                  brancas em seu cabelo. Ela segura uma lira feita de um galho no qual três 
+                  pequenos pássaros estão sentados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro XII -->
+        <div class="modal fade" id="quadro12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">The judgement of Paris (1895)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/the-judgement-of-paris-1895.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>"The judgement of Paris" foi um calendário em formato litografico, idealizado por 
+                  mucha em 1895 para a companhia Vieillemard printing. O julgamento de Páris é um evento 
+                  e conto da mitologia grega onde encontra-se a origem para a Guerra de Troia. Segundo as 
+                  narrativas gráficas e orais, Éris, deusa da discórdia, teria ficado irritada ao não ser 
+                  convidada à uma festa no Olimpo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro XIII -->
+        <div class="modal fade" id="quadro13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">A quartier latin (1898)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/a-quartier-latin-1898.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Mucha assinou vários contratos para ilustrar várias revistas e comissões de pôsteres.
+                  Uma dessas revistas é Au Quartier Latin. Esta imagem em particular é uma capa de uma publicação 
+                  em 1898. A revista foi impressa por Paul Dupont durante os primeiros estágios da era Art Nouveau 
+                  e recebe o nome, sem dúvida, da seção de Paris com o mesmo nome.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro XIV -->
+        <div class="modal fade" id="quadro14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Summer (1896)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/summer-1896.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Mucha retrata Summer como uma morena sensual e sensual com papoulas 
+                  vermelhas no cabelo. Um clima sereno de repouso e contentamento permeia a 
+                  cena enquanto a mulher se inclina contra uma videira com os pés banhando-se 
+                  na água rasa abaixo. Mucha capta a luz do verão no delicado céu azul além.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro XV -->
+        <div class="modal fade" id="quadro15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">The autumn (1896)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/the-autumn-1896.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Autumn é representado como uma figura brincalhona usando uma coroa de 
+                  crisântemos em seus longos cabelos ruivos. Ela se senta em meio a uma rica 
+                  tapeçaria de plantas outonais e colhe uvas de uma videira abundante.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro XVI -->
+        <div class="modal fade" id="quadro16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Ruby (1899)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/ruby-1899.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Ruby mantém uma pose provocante, tocando alegremente seu colar de rubi 
+                  ornamentado. A composição de Mucha é dominada pelo vermelho, símbolo de
+                  amor e paixão.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro XVII -->
+        <div class="modal fade" id="quadro17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Zodiac (1896)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/zodiac-1896.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Zodiac' foi o primeiro trabalho de Mucha sob seu contrato com a gráfica 
+                  Champenois e foi originalmente projetado como um calendário interno para 
+                  a empresa. Nesta composição, Mucha incorporou doze signos do zodíaco no 
+                  disco semelhante a um halo atrás da cabeça da mulher, um dos motivos 
+                  habituais de Mucha. A majestosa beleza da mulher é enfatizada por seu 
+                  porte majestoso e joias elaboradas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro XVIII -->
+        <div class="modal fade" id="quadro18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">Dawn (1899)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/Dawn-1899.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Aqui temos Down em uma paisagem de sonho Art Nouveau cercada por galhos e árvores, 
+                  uma donzela de olhos brilhantes está "removendo sua colcha de seu torso nu enquanto 
+                  olha para o sol nascente"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Quadro XIX -->
+        <div class="modal fade" id="quadro19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title  w-100" id="exampleModalLabel">The times of the day (1899)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center">
+                  <img class="col-12" class="img-fluid" src="imagens/the-times-of-the-day-1899.jpg" alt="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p>Nesta série, Mucha combinou cores frescas e delicadas com motivos florais exuberantes.
+                  Cada mulher está em um ambiente natural que reflete seu humor. Todas estão em uma 
+                  elaborada moldura decorativa que lembra uma janela gótica. Esses painéis ilustram 
+                  todas as qualidades típicas dos cartazes de Mucha: as belas mulheres com gestos 
+                  sugestivos, o uso decorativo de flores e cabelos fluidos, as cores sutis e 
+                  impressionantes que se combinam para criar uma harmonia convincente de visão 
+                  cuja intenção é inspirar e elevar o espectador.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <!-- Modal Sobre Nós -->
+        <div class="modal fade" id="sobre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h5 class="modal-title w-100" id="exampleModalLabel">Sobre Nós</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="aside--modal--text">
+                <p>Somos um grupo de desenvolvedores FullStack em treinamento que se aprimora a cada dia.
+                  <br>
+                  Flavius Costa
+                  <br>
+                  Rithie Natan
+                  <br>
+                  Thatyara Alves
+                  <br>
+                  Wesley Matheus
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn aside--modal--button" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Entre em Contato Conosco -->
+        <div class="modal fade" id="fale" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h5 class="modal-title w-100" id="exampleModalLabel">Duvidas e sugestões entre em contato!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modal--forms">
+                <form class="row g-1 needs-validation" novalidate>
+                  <div class="col-md-12">
+                    <label for="validationCustom01" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <div class="valid-feedback">OK!</div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="validationCustom02" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">OK!</div>
+                  </div>
+                  
+                  <div class="col-md-12">
+                    <label for="validationCustomEmail" class="form-label">E-mail</label>
+                    <div class="input-group has-validation">
+                      <input type="email" class="form-control" id="validationCustomEmail" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">E-mail Inválido!</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="validationCustom03" class="form-label">Mensagem</label>
+                    <textarea class="form-control modal--forms--message" id="validationCustom03" required></textarea>
+                    <div class="invalid-feedback">Mensagem Inválida!</div>
+                  </div>
+                  
+                  <div class="col-md-12 modal--forms--button">
+                    <button class="btn aside--modal--button" type="submit">Enviar</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn aside--modal--button" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
 
 
-        <!-- Title -->
-        <title>Document</title>
+    <!-- Footer -->
+    <footer> 
+      <nav class="nav">
+        <a 
+          class="nav-link footer--link"
+          data-bs-toggle="modal" 
+          data-bs-target="#sobre"
+        >
+          Sobre Nós
+        </a>
+
+        <a class="nav-link footer--link" href="#galeria">Galeria</a>
+
+        <a 
+          class="nav-link footer--link"
+          data-bs-toggle="modal" 
+          data-bs-target="#fale"
+        >
+          Entre em Contato Conosco
+        </a>
+      </nav>
+
+      <p>Let's Code Dev Team &#169;</p>
+    </footer>
 
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="AtividadeFinal.css" type="text/css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    </head>
-
-    <body>
-        <!-- Header -->
-        
-
-
-        <!-- Main -->
-
-
-
-        <!-- Footer -->
-
-
-
-        <!-- Scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    </body>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
 </html>

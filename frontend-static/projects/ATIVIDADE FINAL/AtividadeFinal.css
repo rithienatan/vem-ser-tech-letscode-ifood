@@ -1,8 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Playball&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+/***** Our fonts
+    font-family: 'Caveat', cursive;
+    font-family: 'Playball', cursive;
+    font-family: 'Satisfy', cursive;
+*****/
+
+
 /*---------- General configs -----------*/
+html 
+{ scroll-behavior: smooth; }
+
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFAF0;
+}
+
+header {
+  position: fixed;
+  background-color: rgba(255, 250, 240, 0.9);
+  color:#362C28;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 2em;
+  top: 0;
+  font-family: 'Playball', cursive;
+  z-index: 3;
+}
+
+main 
+{ margin-top: 15em; margin-bottom: 2em !important; }
+
+section
+{ max-width: 80%; margin: auto; }
+
+footer {
+  font-family: 'Playball', cursive;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer p 
+{ padding: 0.5rem 1rem; }
+
+h1 {
+  font-family: 'Playball', cursive; 
+  text-align: center;
+  color: #40241E;
+}
+
+h4 
+{ color: #40241E; font-family: 'Satisfy', cursive; }
+
+h5 
+{ 
+  color: #40241E; 
+  font-family: 'Caveat', cursive; 
+  font-size: xx-large !important; 
 }
 
 
 /*---------- Custom configs -----------*/
+.nav-item 
+{ padding-right: 1em; text-align: right; }
+
+.navbar-collapse 
+{ flex-grow: 0 !important; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5em;
+}
+
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 5em; 
+}
+
+.column img {
+  margin-top: 2em;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 0.6em;
+  cursor: pointer;
+  transition: 0.3s linear;
+  margin-top: 1em;
+}
+
+.column img:hover {
+  filter: grayscale(0);
+  box-shadow: 1em 1em 10em 0 rgba(0, 0, 0, 0.3);
+}
+
+.footer--link 
+{ color: #362C28 !important; }
+
+.footer--link:hover 
+{ color: rgba(54, 44, 40, 0.2) !important; }
+
+.aside--modal--text
+{ padding: 1em; color: #40241E; font-family: 'Caveat', cursive; }
+
+.aside--modal--text p
+{ font-size: 1.25rem !important; }
+
+.aside--modal--button
+{ background-color: #40241E !important; color: #FFFAF0 !important; font-family: 'Caveat', cursive; }
+
+.aside--modal--button:hover
+{ background-color: rgba(54, 44, 40, 0.8) !important; }
+
+.modal--forms 
+{ 
+  font-size: 1.25rem !important;
+  background-image: url(imagens/background-3v2.jpg); 
+  font-family: 'Caveat', cursive; 
+  background-size: contain;
+}
+
+.modal--forms--button
+{
+  margin-top: 1rem !important; 
+  display: flex;
+  justify-content: center;
+}
+
+.modal--forms--message
+{ height: 15vh; }
+
+.modal-footer {
+  font-family: 'Zen Kurenaido', Arial;
+  color: #362C28;
+  font-size: 1.3em;
+  text-align: justify;
+  font-weight: bold;
+}
+
+
+/*---------- Media Screen ----------*/
+@media screen and (max-width: 800px) {
+  .column 
+  { flex: 50%; max-width: 50%; }
+}
+
+@media screen and (max-width: 600px) {
+  .column 
+  { flex: 100%; max-width: 100%; }
+
+  .column img 
+  { filter: grayscale(0) brightness(1); }
+}

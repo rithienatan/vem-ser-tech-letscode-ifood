@@ -2,29 +2,28 @@
 
 ### Autores
 
-*[Flavius Costa]()*
-*[Rithie Natan](https://github.com/rithienatan)*
-*[Thatyara Alves](https://github.com/ThatyaraAlves)*
-*[Wesley Matheus](https://github.com/Wesleyxsx)*
+- *[Flavius Costa]()*
+- *[Rithie Natan](https://github.com/rithienatan)*
+- *[Thatyara Alves](https://github.com/ThatyaraAlves)*
+- *[Wesley Matheus](https://github.com/Wesleyxsx)*
 
 ### Roteiro
 
-1. **Tema:** ?
-2. **Estilo de Fonte:** ?
-3. **Palheta de Cores:** ?
-3. **Estrutura do Site**
-    1. Header
+1. **Tema:** Showcase de Arte
+2. **Estilo de Fonte:** Playball, Satisfy e Caveat
+3. **Palheta de Cores(No máximo 5):** #FFFAF0(Floral White), #362C28(Black Coffee), #F5DEB4(Wheat). **Estrutura do Site**
+    1. Header(Wesley)
         1. Navigation Bar
             1. Logo
             2. Links
-    2. Main
+    2. Main(Thatyara)
         1. Section
         2. Cards or Carousel
-    3. Footer
+    3. Footer(Flavius)
         1. Navigation Bar
             1. Logo
             2. Links
-4. **Bootstrap Guide**
+5. **Bootstrap Guide**
     1. Layout
         1. [Containers](https://getbootstrap.com/docs/5.1/layout/containers/)
         2. [Grid](https://getbootstrap.com/docs/5.1/layout/grid/)
@@ -46,3 +45,7 @@
 - ***[Bootstrap](https://getbootstrap.com/)***
 - ***[Google Fonts](https://fonts.google.com/)***
 - ***[Palheta de Cores](https://coolors.co/)***
+
+### Layout examples
+- ***[Artis Opus](https://www.artis-opus.com/)***
+- ***[Google Arts & Culture](https://artsandculture.google.com/partner?tab=pop)***
