@@ -6,3 +6,4 @@ Web full-stack course.
 ### Modules
 
 - Front-End Static
+- Lógica De Progamação I | JavaScript
