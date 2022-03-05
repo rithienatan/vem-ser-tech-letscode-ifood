@@ -37,6 +37,7 @@ let igualWithTypeFalse = 2 === '2';
 
 
 //----------- Condicionais ----------
+/*
 if(1 === 1) console.log('True');
 
 if(1 > 1)
@@ -60,9 +61,11 @@ else if(1 === 3)
 { console.log('é igual'); }
 else
 { console.log('n é igual a nada'); }
+*/
 
 
 //---------- prints ----------
+/*
 console.log('Variável I: ', variavelI);
 console.log(typeof variavelI);
 
@@ -77,6 +80,7 @@ console.log('Subtração: ', sub);
 console.log('Multiplicação: ', mult);
 console.log('Divisão: ', div);
 console.log('Módulo: ', mod);
+*/
 
 
 //---------- exports ----------
@@ -100,7 +104,5 @@ module.exports = {
     diferenteTrue,
     diferenteFalse,
     igualTrue,
-    igualWithTypeFalse,
-
-
+    igualWithTypeFalse
 };

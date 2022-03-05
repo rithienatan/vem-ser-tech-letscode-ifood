@@ -1,0 +1,13 @@
+# Node elements - folder inclass
+inclass/package-lock.json
+inclass/node_modules
+inclass/coverage
+
+# Node elements - folder projects
+projects/algoritmo-II-frotas-de-veiculos/node_modules
+projects/algoritmo-II-frotas-de-veiculos/package-lock.json
+projects/algoritmo-II-frotas-de-veiculos/coverage
+
+projects/lista-exercicios/node_modules
+projects/lista-exercicios/package-lock.json
+projects/lista-exercicios/coverage
