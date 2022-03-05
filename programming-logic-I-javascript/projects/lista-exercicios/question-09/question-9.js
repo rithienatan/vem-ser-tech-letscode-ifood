@@ -79,7 +79,7 @@ function StaticMain()
     console.log("Salário total do mês: ", SalarioFinal(horasTrabalhadas, salarioPorHora));
 }//end StaticMain()
 
-//StaticMain();
+StaticMain();
 
 
 /**---------- Module Exports ----------**/

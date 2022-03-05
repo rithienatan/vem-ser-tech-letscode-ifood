@@ -71,7 +71,7 @@ function StaticMain()
     console.log(VerificaValor(valor1, valor2));
 }//end StaticMain()
 
-//StaticMain();
+StaticMain();
 
 
 /**---------- Module Exports ----------**/

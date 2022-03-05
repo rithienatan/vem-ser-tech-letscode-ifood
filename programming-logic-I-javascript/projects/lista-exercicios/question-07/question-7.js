@@ -67,7 +67,7 @@ function StaticMain()
     console.log("Valor da compra: ", CalculaCompra(quantidade));
 }//end StaticMain()
 
-//StaticMain();
+StaticMain();
 
 
 /**---------- Module Exports ----------**/

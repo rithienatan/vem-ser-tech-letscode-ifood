@@ -83,7 +83,7 @@ function StaticMain()
     console.log(`Elemento: ${resultado.elemento} e Posição: ${resultado.index}`);
 }//end StaticMain()
 
-//StaticMain();
+StaticMain();
 
 
 /**---------- Module Exports ----------**/

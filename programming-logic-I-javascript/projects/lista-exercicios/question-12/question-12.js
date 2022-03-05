@@ -78,7 +78,7 @@ function StaticMain()
     { console.log("ACHEI"); }
 }//end StaticMain()
 
-//StaticMain();
+StaticMain();
 
 
 /**---------- Module Exports ----------**/

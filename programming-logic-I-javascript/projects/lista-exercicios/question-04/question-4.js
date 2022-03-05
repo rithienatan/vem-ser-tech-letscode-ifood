@@ -79,7 +79,7 @@ function StaticMain()
     console.log("A média final do aluno é: ", MediaFinal(nota1, nota2, nota3));
 }//end StaticMain()
 
-//StaticMain();
+StaticMain();
 
 
 /**---------- Module Exports ----------**/

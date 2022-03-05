@@ -69,7 +69,7 @@ function StaticMain()
     console.log("O custo do carro é: ", CustoFinal(custoInicial));
 }//end StaticMain()
 
-//StaticMain();
+StaticMain();
 
 
 /**---------- Module Exports ----------**/

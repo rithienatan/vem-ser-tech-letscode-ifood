@@ -68,7 +68,7 @@ function StaticMain()
     ImprimeValores(valor);
 }//end StaticMain()
 
-//StaticMain();
+StaticMain();
 
 
 /**---------- Module Exports ----------**/

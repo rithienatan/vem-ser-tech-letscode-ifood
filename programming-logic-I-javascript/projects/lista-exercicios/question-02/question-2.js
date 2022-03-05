@@ -72,7 +72,7 @@ function StaticMain()
     console.log("O novo salário é: ", SalarioReajuste(salario, reajuste));
 }//end StaticMain()
 
-//StaticMain();
+StaticMain();
 
 
 /**---------- Module Exports ----------**/

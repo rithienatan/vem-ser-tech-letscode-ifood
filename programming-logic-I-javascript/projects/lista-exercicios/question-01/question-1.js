@@ -71,7 +71,7 @@ function StaticMain()
     console.log("A área do triângulo é: ", AreaTriangulo(base, altura));
 }//end StaticMain()
 
-//StaticMain();
+StaticMain();
 
 
 /**---------- Module Exports ----------**/
