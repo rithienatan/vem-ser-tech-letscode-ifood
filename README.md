@@ -7,3 +7,4 @@ Web full-stack course.
 
 - Front-End Static
 - Lógica De Progamação I | JavaScript
+- Programação Orientada a Objetos I | JavaScript
