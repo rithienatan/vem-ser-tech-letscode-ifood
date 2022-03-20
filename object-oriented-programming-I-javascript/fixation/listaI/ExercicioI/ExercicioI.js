@@ -9,6 +9,14 @@ const prompt = require('prompt-sync')({sigint: true});
 
 
 //---------- Functions ---------
+/**
+ * Valid user inputs
+ * 
+ * @param {number} dia 
+ * @param {number} mes 
+ * @param {number} ano 
+ * @returns {boolean} True for valid, false for not valid
+ */
 function ValidUserInfo(dia, mes, ano)
 {
     let answer = true;
