@@ -1,0 +1,24 @@
+/*---------- Global tags ----------*/
+p {
+    color: red;
+}
+
+/*---------- Classes ---------*/
+.container {
+    text-align: center;
+}
+
+.button {
+    width: 50em;
+}
+
+.grid {
+    margin-top: 2em;
+}
+
+.grid-item {
+    margin-left: 3em !important;
+    margin-right: 3em !important;
+    border: 0.1em solid black;
+    border-radius: 0.2em;
+}
