@@ -2,7 +2,7 @@
 import { React, useState } from 'react';
 
 /*---------- Functions and JSONs imports ---------*/
-import randomIntFromInterval, { randonIntFromInterval } from './aux-methods/RngNumber';
+import randomIntFromInterval from './aux-methods/RngNumber';
 import { alunos } from './aux-methods/Alunos';
 
 /*---------- CSS imports ---------*/
@@ -12,7 +12,7 @@ import './App.css';
 
 /*---------- Main function ----------*/
 /**
- * Main container
+ * Main Component
  * 
  * @returns {JSX} Return JSX 
  */
