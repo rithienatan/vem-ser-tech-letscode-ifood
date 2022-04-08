@@ -1,0 +1,43 @@
+/*--------- Classes ---------*/
+.container {
+    padding: 2em;
+}
+
+.gridItem {
+    margin-top: 1em !important;
+    margin-left: 3em !important;
+    padding: 1em;
+    border: 0.1em solid #000000;
+    border-radius: 0.2em;
+    text-align: center;
+}
+
+.alert {
+    margin-bottom: 1em !important;
+}
+
+.myListItem {
+    justify-content: space-between !important;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.descriptionField {
+    width: 100%;
+    margin-bottom: 1em !important;
+}
+
+.priceField {
+    width: 100%;
+    margin-bottom: 1em !important;
+}
+
+.priceText {
+    color: green;
+}
+
+.totalField {
+    width: 100%;
+}
