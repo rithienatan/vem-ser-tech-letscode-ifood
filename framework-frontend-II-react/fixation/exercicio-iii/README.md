@@ -46,6 +46,10 @@ personagens = [
 ]
 ```
 
+![estado inicial](./imgs/estadoinicial.png)
+![apos selecionar](./imgs/aposelecionar.png)
+![ultimo exemplo](./imgs/ultimaselecao.png)
+
 ### How to run
 
 ```

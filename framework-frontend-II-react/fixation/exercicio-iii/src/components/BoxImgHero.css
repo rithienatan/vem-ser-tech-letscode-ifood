@@ -1,0 +1,13 @@
+/*---------- Global styles ---------*/
+img {
+    margin-top: 1em;
+    max-width: 68.5em;
+}
+
+/*--------- Classes ---------*/
+.container {
+    margin: 1em;
+    border: 0.1em solid black;
+    border-radius: 0.2em;
+    padding: 1em;
+}
