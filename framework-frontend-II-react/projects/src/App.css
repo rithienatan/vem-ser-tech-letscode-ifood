@@ -1,0 +1,15 @@
+/*---------- Globals ----------*/
+h1 {
+    color: #FFF;
+}
+
+main {
+    display: flex;
+}
+
+/*---------- Classes ----------*/
+.paperBackdrop {
+    background-image: url("https://external-preview.redd.it/ee4N_6iLS3zLL6jNrGarWT1TK17Y9hOsXVuf2jaDC64.png?auto=webp&s=e859a23abf3c586bb5dd12f4fdbaf810c5a2c14a");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

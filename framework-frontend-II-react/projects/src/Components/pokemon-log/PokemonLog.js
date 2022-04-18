@@ -9,15 +9,17 @@ import { Container } from "@mui/material";
 
 /*----------- Component PokemonLog ----------*/
 /**
- * Component Pokemon Log 
+ * Component Pokemon Log
+ * 
+ * @param {string} names
  * 
  * @returns {JSX.Element}
  */
-export default function PokemonLog()
+export default function PokemonLog({ names })
 {
     return(
-        <Container>
-            <p>Pokemon é {}</p>
+        <Container sx={{ color: "#FFEBC6" }}>
+            <p className="logText">Pokémon {names}</p>
         </Container>
     );
 }//end PokemonLog()

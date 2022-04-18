@@ -20,87 +20,105 @@ import PokemonList from "./Components/pokemon-list/PokemonList";
 
 /*---------- CSSs ----------*/
 import './App.css';
-import { Avatar, Box, Container, Backdrop, Button, Paper } from "@mui/material";
+import { Container, Backdrop, Button, Paper, Grid } from "@mui/material";
 
 
 /*---------- Main App ----------*/
 /**
  * Main App
  * 
- * @returns {JSX}
+ * @returns {JSX.Element}
  */
 function App() 
 {
-
-
-  const [match, setMatch] = useState(false);
-
-  const [openBackdrop, setOpenBackdrop] = useState(true);
+  //new game and restart game configuration
   const [startGame, setStartGame] = useState(false);
+  const [openBackdrop, setOpenBackdrop] = useState(true);
+  
+  /**
+   * Começa ou recomeça o jogo
+   */
+  const NewGame = () => {
+    setStartGame(!startGame);
+    setOpenBackdrop(!openBackdrop);
+  };
 
 
-  //pega um pokemon aleatório para o game
+  //set random pokemon for init game
   const [isThatPokemon, setIsThatPokemon] = useState(randomIntFromInterval(0, 149));
+
+
+  //Configure to show right palpite
+  const [palpite, setPalpite] = useState(false);
 
 
   //lista de pokemons
   const [pokes, setPokes] = useState(pokemons);
 
 
-  //lista de filtros dos pokemons
-  const [filtros, setFiltros] = useState(filters);
-
-
-  /**
-   * Começa ou recomeça o jogo
-   */
-  const NewGame = () => {
-    setStartGame(!startGame);
-  };
+  //Configure logs
+  const [log, setLog] = useState(null);
 
   return (
     <main>
-      <p>{isThatPokemon}</p>
-      {startGame === true ? 
-        <>
-          <Container className="main-content">
-            <PokemonDiscovery />
-            <PokemonLog />
-            <PokemonFiltro filters={filters} />
-          </Container>
-      
-          <Container className="aside-list">
-            <PokemonList 
-              pokemons={pokemons} 
-              isThatPokemon={pokemons[isThatPokemon]} 
-            />
-          </Container>
-        </> :
-        <Backdrop 
-          sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
-          open={openBackdrop}
+      <Backdrop 
+        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={openBackdrop}
+      >
+        <Paper 
+          className="paperBackdrop" 
+          sx={{ width: "80%", height: "80%" }} 
+          elevation={16}
         >
-          <Paper elevation={16}>
-            <Avatar
-              sx={{ width: "60%", height: "60%" }}
-              src="http://pm1.narvii.com/6434/7a2cb5fc86df1db37db549422128c66186059808_00.jpg"
-              alt="Guess Who? Pikachu"
-            >
-              Pikachu
-            </Avatar>
-
-            <Box>
+          <Grid 
+            sx={{ width: "100%", height: "100%" }}
+            container 
+            direction="column"
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <Grid item xs={4}>
+              <h1>Welcome to Guess Who? Pokémon!</h1>
+            </Grid>
+            <Grid item xs={4}></Grid>
+            <Grid item xs={2}>
               <Button 
-                variant="contaned"
+                sx={{ color: "#181D27", backgroundColor: "#FFEBC6" }}
+                variant="contained"
                 size="large" 
                 onClick={() => NewGame()}
               >
                 New Game
               </Button>
-            </Box>
+            </Grid>
+          </Grid>
         </Paper>
-        </Backdrop>
-      }
+      </Backdrop>
+
+      <Container disableGutters className="main-content">
+        <PokemonDiscovery pokemon={pokemons[isThatPokemon]} palpite={palpite} />
+        <PokemonLog names={log} />
+        <PokemonFiltro 
+          filters={filters} 
+          pokemon={pokemons[isThatPokemon]}
+          pokeList={pokes} 
+          updatePokemonList={setPokes}
+          updateLog={setLog}
+        />
+      </Container>
+      
+      <Container 
+        disableGutters
+        className="aside-list"
+        sx={{ width: "15%" }}
+      >
+        <PokemonList 
+          pokemons={pokes} 
+          isThatPokemon={pokemons[isThatPokemon]} 
+          rightPalpite={setPalpite}
+          updateLog={setLog}
+        />
+      </Container>
     </main>
   );
 }//end App()

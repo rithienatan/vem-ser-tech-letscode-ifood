@@ -1,4 +1,18 @@
 /*---------- Classes ----------*/
-.backgroundImg {
-    width: 100%;
+.containerPokemonDiscovery {
+    background-image: url("https://images3.alphacoders.com/677/thumb-1920-677583.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pokemonImgHide {
+    width: 40%;
+    margin: 10% 0 0 10%;
+    filter: brightness(0);
+}
+
+.pokemonImgShow {
+    width: 40%;
+    margin: 10% 0 0 10%;
+    filter: brightness(1);
 }

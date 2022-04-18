@@ -64,10 +64,14 @@ function allyProps(index)
  * Component Pokemon Filtro List
  * 
  * @param {Object[]} filtro
+ * @param {Object} pokemon
+ * @param {Array} pokeList
+ * @param {Function} updatePokemonList
+ * @param {Function} updateLog
  * 
  * @returns {JSX.Element}
  */
-export default function PokemonFiltro({ filters })
+export default function PokemonFiltro({ filters, pokemon, pokeList, updatePokemonList, updateLog })
 {
     const [value, setValue] = useState(0);
 
@@ -75,16 +79,108 @@ export default function PokemonFiltro({ filters })
         setValue(newValue);
     };
 
+    const updatePokeList = (attribute, element) => {
+        let newList = [];
+
+        if(attribute === "types")
+        {
+            let indexAttribute = pokemon.types.findIndex(el => el === element);
+
+            if(indexAttribute !== -1)
+            {
+                newList = pokeList.filter((el) => {
+                    return el.types[indexAttribute] === element;
+                });
+
+                updatePokemonList(newList);
+                updateLog(`is type ${element}!`);
+            }
+            else
+            { updateLog(`is not type ${element}!`); }
+        }
+        else if(attribute === "color")
+        {
+            if(pokemon.color === element)
+            {
+                newList = pokeList.filter((el) => {
+                    return el.color === element;
+                });
+
+                updatePokemonList(newList);
+                updateLog(`is color ${element}!`);
+            }
+            else
+            { updateLog(`is not color ${element}!`); }
+        }
+        else if(attribute === "generation")
+        {
+            if(pokemon.generation === element)
+            {
+                newList = pokeList.filter((el) => {
+                    return el.generation === element;
+                });
+
+                updatePokemonList(newList);
+                updateLog(`is from ${element}!`);
+            }
+            else
+            { updateLog(`is not from ${element}!`); }
+        }
+        else if(attribute === "habitat")
+        {
+            if(pokemon.habitat === element)
+            {
+                newList = pokeList.filter((el) => {
+                    return el.habitat === element;
+                });
+
+                updatePokemonList(newList);
+                updateLog(`lives in ${element}!`);
+            }
+            else
+            { updateLog(`is not lives in ${element}!`); }
+        }
+        else if(attribute === "isLegendary")
+        {
+            if(pokemon.isLegendary === element)
+            {
+                newList = pokeList.filter((el) => {
+                    return el.isLegendary === element;
+                });
+
+                updatePokemonList(newList);
+                updateLog(`is legendary!`);
+            }
+            else
+            { updateLog(`is not legendary!`); }
+        }
+        else
+        {
+            if(pokemon.shape === element)
+            {
+                newList = pokeList.filter((el) => {
+                    return el.shape === element;
+                });
+
+                updatePokemonList(newList);
+                updateLog(`shape is ${element}!`);
+            }
+            else
+            { updateLog(`is not shape ${element}!`); }
+        }//end if
+    };
+
+
     return(
         <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <Tabs value={value} onChange={handleChange}>
-                    <Tab label="Tipos" {...allyProps(0)} />
-                    <Tab label="Cor" {...allyProps(1)} />
-                    <Tab label="Geração" {...allyProps(2)} />
-                    <Tab label="Habitat" {...allyProps(3)} />
-                    <Tab label="Lendário" {...allyProps(4)} />
-                    <Tab label="Shape" {...allyProps(5)} />
+                    <Tab sx={{ color: "#FFEBC6" }} label="Tipos" {...allyProps(0)} />
+                    <Tab sx={{ color: "#FFEBC6" }} label="Cor" {...allyProps(1)} />
+                    <Tab sx={{ color: "#FFEBC6" }} label="Geração" {...allyProps(2)} />
+                    <Tab sx={{ color: "#FFEBC6" }} label="Habitat" {...allyProps(3)} />
+                    <Tab sx={{ color: "#FFEBC6" }} label="Lendário" {...allyProps(4)} />
+                    <Tab sx={{ color: "#FFEBC6" }} label="Shape" {...allyProps(5)} />
                 </Tabs>
             </Box>
 
@@ -95,7 +191,10 @@ export default function PokemonFiltro({ filters })
                             <Chip 
                                 key={index}
                                 label={element} 
-                                onClick={() => null}
+                                color="secondary"
+                                sx={{ color: "#FFEBC6" }}
+                                clickable
+                                onClick={() => updatePokeList("types", element)}
                             />
                         );
                     })}
@@ -109,7 +208,10 @@ export default function PokemonFiltro({ filters })
                             <Chip 
                                 key={index}
                                 label={element} 
-                                onClick={() => null}
+                                color="secondary"
+                                sx={{ color: "#FFEBC6" }}
+                                clickable
+                                onClick={() => updatePokeList("color", element)}
                             />
                         );
                     })}
@@ -122,8 +224,11 @@ export default function PokemonFiltro({ filters })
                         return(
                             <Chip 
                                 key={index}
-                                label={element} 
-                                onClick={() => null}
+                                label={element}
+                                color="secondary" 
+                                sx={{ color: "#FFEBC6" }}
+                                clickable
+                                onClick={() => updatePokeList("generation", element)}
                             />
                         );
                     })}
@@ -137,7 +242,10 @@ export default function PokemonFiltro({ filters })
                             <Chip 
                                 key={index}
                                 label={element} 
-                                onClick={() => null}
+                                color="secondary"
+                                sx={{ color: "#FFEBC6" }}
+                                clickable
+                                onClick={() => updatePokeList("habitat", element)}
                             />
                         );
                     })}
@@ -151,7 +259,10 @@ export default function PokemonFiltro({ filters })
                             <Chip 
                                 key={index}
                                 label={element ? "Lendário" : "Não Lendário"} 
-                                onClick={() => null}
+                                color="secondary"
+                                sx={{ color: "#FFEBC6" }}
+                                clickable
+                                onClick={() => updatePokeList("isLegendary", element)}
                             />
                         );
                     })}
@@ -165,7 +276,10 @@ export default function PokemonFiltro({ filters })
                             <Chip 
                                 key={index}
                                 label={element} 
-                                onClick={() => null}
+                                color="secondary"
+                                sx={{ color: "#FFEBC6" }}
+                                clickable
+                                onClick={() => updatePokeList("shape", element)}
                             />
                         );
                     })}

@@ -13,11 +13,21 @@ import { Container } from "@mui/material";
  * 
  * @returns {JSX.Element}
  */
-export default function PokemonDiscovery()
+export default function PokemonDiscovery({ pokemon, palpite })
 {
+    //document.getElementById(pokemon.id).style.filter = "brightness(1)";
+   
     return(
-        <Container>
-            <img className="backgroundImg" src="https://images3.alphacoders.com/677/thumb-1920-677583.png" alt="Quem é esse pokemon?" />
+        <Container 
+            className="containerPokemonDiscovery"
+            disableGutters
+            sx={{ margin: 0, width: "100%", height: "70vh" }}
+        >
+            <img 
+                id={pokemon.id} 
+                className={palpite ? "pokemonImgShow" : "pokemonImgHide"} 
+                src={pokemon.sprite}
+            />
         </Container>
     );
 }//end PokemonDiscovery()
