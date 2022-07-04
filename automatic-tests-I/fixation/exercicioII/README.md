@@ -12,3 +12,15 @@
   * Nodemon é uma biblioteca para realizar o LiveReload durane o desenvolvimento
 * [node-fetch](https://github.com/node-fetch/node-fetch)
   * Utilizado para realizar comunicação com outras APIs (node não tem o `fetch` nativamente, é necessário instalar uma biblioteca para isso)
+
+## Enunciado
+
+Seguindo o TDD
+
+* Escrever um gerador de Lorem Ipsum em uma nova rota
+* O usuário ira informar a quantidade de palavras que a frase deve ter
+* Construir os primeiros casos (onde os testes falharão)
+* Implementar a biblioteca (onde os testes passarão)
+* Adicionar novos casos (testes falharão novamente)
+* Seguir padrão do projeto é obrigatório
+* Criar os testes de unidade que garanta sua consistencia (cobertura minima: 100%)
