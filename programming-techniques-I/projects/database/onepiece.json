@@ -1,0 +1,40 @@
+{
+    "onepieceLastId": 5,
+    "onepieces": [
+        {
+            "id": 1,
+            "name": "Monkey D. Luffy",
+            "localOrigem": "East Blue",
+            "apelido": "Chapéu de Palha",
+            "ocupacao": "Pirata"
+        },
+        {
+            "id": 2,
+            "name": "Nami",
+            "localOrigem": "East Blue",
+            "apelido": "Gatuna ",
+            "ocupacao": "Pirata"
+        },
+        {
+            "id": 3,
+            "name": "Roronoa Zoro",
+            "localOrigem": "East Blue",
+            "apelido": "Caçador de Piratas Zoro",
+            "ocupacao": "Espadachim"
+        },
+        {
+            "id": 4,
+            "name": "Sanji",
+            "localOrigem": "Reino German",
+            "apelido": "Perna Negra",
+            "ocupacao": "Cozinheiro"
+        },
+        {
+            "id": 5,
+            "name": "Tony Tony Chopper",
+            "localOrigem": "Ilha Drum",
+            "apelido": "Amante de Algodão Doce",
+            "ocupacao": "Médico"
+        }
+    ]    
+}

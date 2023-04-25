@@ -1,0 +1,40 @@
+{
+    "digimonLastId": 5,
+    "digimons": [
+        {
+            "id": 1,
+            "nome": "Alraumon",
+            "tipo": "Planta",
+            "cor": "Verde",
+            "atributo": "Data"
+        },
+        {
+            "id": 2,
+            "nome": "Bacomon",
+            "tipo": "Mutante",
+            "cor": "Amarelo-queimado",
+            "atributo": "Data"
+        },
+        {
+            "id": 3,
+            "nome": "Airdramon",
+            "tipo": "Besta Mítica",
+            "cor": "Misto",
+            "atributo": "Vaccine"
+        },
+        {
+            "id": 4,
+            "nome": "Betamon",
+            "tipo": "Anfíbio",
+            "cor": "Verde",
+            "atributo": "Virus"
+        },
+        {
+            "id": 5,
+            "nome": "Blikmon",
+            "tipo": "Machine",
+            "cor": "Cinza",
+            "atributo": "Data"
+        }
+    ]
+}
