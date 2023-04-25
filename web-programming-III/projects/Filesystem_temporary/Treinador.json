@@ -1,0 +1,25 @@
+{
+    "treinadores": [
+        {
+            "id": 1,
+            "nomeTreinador": "Rithie",
+            "idadeTreinador": "26"
+        },
+        {
+            "id": 2,
+            "nomeTreinador": "Wesley",
+            "idadeTreinador": "28"
+        },
+        {
+            "id": 3,
+            "nomeTreinador": "Flavius",
+            "idadeTreinador": "35"
+        },
+        {
+            "id": 4,
+            "nomeTreinador": "Thatyara",
+            "idadeTreinador": "23"
+        }
+    ],
+    "last_id": 4
+}

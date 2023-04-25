@@ -1,0 +1,2 @@
+DELETE FROM tb_cidades WHERE id = 9715;
+COMMIT;

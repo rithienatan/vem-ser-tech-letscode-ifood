@@ -1,0 +1,1 @@
+INSERT INTO tb_cidades VALUES (9715, 27, 'XX', 'XXXXXX');

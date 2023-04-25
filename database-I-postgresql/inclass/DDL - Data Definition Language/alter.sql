@@ -1,0 +1,1 @@
+ALTER TABLE tb_produtos ADD nome_fabricante varchar(50);

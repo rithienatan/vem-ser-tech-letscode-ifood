@@ -1,0 +1,35 @@
+{
+    "pokemons": [
+        {
+            "id": 1,
+            "pokemonName": "Bulbasaur",
+            "pokemonType": "Grass",
+            "pokedexNumber": "1"
+        },
+        {
+            "id": 2,
+            "pokemonName": "Ivysaur",
+            "pokemonType": "Grass",
+            "pokedexNumber": "2"
+        },
+        {
+            "id": 3,
+            "pokemonName": "Venusaur",
+            "pokemonType": "Grass",
+            "pokedexNumber": "3"
+        },
+        {
+            "id": 4,
+            "pokemonName": "Charmander",
+            "pokemonType": "Fire",
+            "pokedexNumber": "4"
+        },
+        {
+            "id": 5,
+            "pokemonName": "Charmeleon",
+            "pokemonType": "Fire",
+            "pokedexNumber": "5"
+        }
+    ],
+    "last_id": 5
+}
