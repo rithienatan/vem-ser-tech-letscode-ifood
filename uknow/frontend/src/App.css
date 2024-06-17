@@ -1,0 +1,9 @@
+/*--------- Imports --------*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Zen+Kurenaido&display=swap');
+
+
+/*--------- Globals ---------*/
+body {
+  /*font-family: 'Righteous', cursive;*/
+  font-family: 'Zen Kurenaido', sans-serif;
+}

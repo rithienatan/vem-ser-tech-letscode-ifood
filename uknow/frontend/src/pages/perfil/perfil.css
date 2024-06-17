@@ -1,0 +1,67 @@
+header .logo {
+    width: 1.5em;
+    filter: drop-shadow(-20px 0px 2px #222);
+    margin-right: 1em;
+}
+
+.nav--component {
+    background-color: #090446;
+}
+
+.profile{
+    background: #e1efe6;
+}
+
+.headerprofile{
+    background-image: url("../../../public/backgroundperfil.png");
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 1em;
+    flex-wrap: wrap;
+}
+
+.divfoto {
+    padding: 2em;
+}
+
+.foto{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nomecompleto{
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+
+
+.perfilusuario{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 45px auto 0;
+}
+
+.panel{
+    background: #e1efe6;
+    padding: 2em;
+    border: 1px solid#090446;
+    border-left: 5px solid#090446;
+    border-radius: 1em;
+    margin: 3em 2em;
+}
+
+.alinhar-perfil{
+    margin-top: 2.3em;
+}
+
+.dadospessoais{
+    width: 450px;
+}
+
+.mudarsenha{
+    width: 450px;
+}

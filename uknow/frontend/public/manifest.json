@@ -1,0 +1,25 @@
+{
+  "short_name": "UKnow",
+  "name": "You Knowleadge",
+  "icons": [
+    {
+      "src": "eye.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "Logoamarelo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "perfil-de-usuario.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

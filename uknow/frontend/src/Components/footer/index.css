@@ -1,0 +1,110 @@
+.footer {
+    background-image: linear-gradient(#18125c, #0e0a30);
+
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.first__row {
+    padding-top: 32px;    
+}
+
+.first__row .titulo {
+    margin-bottom: 0px;
+}
+.first__row .creditos {
+    font-size: 13px;
+}
+
+.first__row ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+}
+.first__row li{
+    flex: 1;
+}
+.first__row .icon {
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+.second__row {
+    padding-top: 0;    
+}
+.second__row h6 {
+    padding-top: 32px;    
+}
+.second__row ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;    
+}
+.second__row li{
+    flex: 1;
+    padding-top: 6px;
+    font-size: 15px;    
+}
+
+.second__row .paths .newsletter__form {
+    display: flex;
+    flex-direction: row;     
+}
+.second__row input {
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid white;
+    border-right: 0px solid white;        
+
+    color: white;    
+}
+.second__row input:focus {
+    background-color: transparent;
+    border: 1px solid white;
+    border-right: 0px solid white;        
+    
+    box-shadow: none;
+    color: white;
+}
+.second__row button, button:hover {
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid white;
+    border-left: 0px solid white;    
+}
+.second__row button:hover {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+    border-left: 0px solid white;    
+}
+
+.second__row img {
+    width: 10rem;
+}
+
+.second__row span {
+    margin: 1em 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .second__row {
+        text-align: center;
+    }
+}

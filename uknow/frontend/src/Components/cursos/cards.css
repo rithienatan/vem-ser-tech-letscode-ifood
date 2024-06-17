@@ -1,0 +1,21 @@
+.carta {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+}
+
+.carta:hover {
+
+    box-shadow:
+        1px 1px #aeb7b3,
+        2px 2px #aeb7b3,
+        3px 3px #aeb7b3,
+        4px 4px #aeb7b3,
+        5px 5px #aeb7b3,
+        6px 6px #aeb7b3;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: .5s ease;
+}
+.button-card{
+    text-decoration: none;
+    box-decoration: none;
+}

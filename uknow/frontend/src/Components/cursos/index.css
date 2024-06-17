@@ -1,0 +1,18 @@
+.titulo{
+    margin-top: 20px;
+    position: relative;
+
+    
+}
+.SearchBar{
+    width: 80%;
+    margin: auto;
+}
+.cursos{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cardsWall {
+    display: flex;
+}

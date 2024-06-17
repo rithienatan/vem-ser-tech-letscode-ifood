@@ -1,0 +1,112 @@
+.big__section {
+    background-color:#E1EFE6;
+    height: 80vh;
+    width: 100%;
+}
+
+
+
+
+
+main .texto__container p{
+    font-size: large;
+}
+
+
+
+main .first__section {
+    background-color: #efcb68;    
+}
+main .first__section img {
+    width: 80%;
+    box-shadow: 8px 10px 5px rgb(1, 30, 53);
+}
+
+main .first__section .texto__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .first__section .texto {
+    color: #000000;
+    text-align: center;
+}
+
+
+
+main .second__section {
+    background-color: #e1efe6;
+}
+
+main .second__section img {
+    width: 70%;    
+    box-shadow: 8px 10px 5px #04011d;
+}
+main .second__section .texto__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .second__section .texto {
+    color: #000000;
+    text-align: center;
+}
+
+
+
+main .third__section {
+    background-color: #aeb7b3;
+}
+main .third__section img {
+    width: 80%;    
+    box-shadow: 8px 10px 5px #0e0a42;
+    background-color: #aeb7b3;
+}
+
+main .third__section .texto__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .third__section .texto {
+    color: #000000;
+    text-align: center;
+}
+
+
+
+main .fourth__section {
+    background-color: #efcb68;
+}
+
+main .fourth__section img {
+    width: 70%;
+}
+main .fourth__section .texto__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .fourth__section .texto {
+    color: #000000;
+    text-align: center;
+}
+
+main .fifth__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    main .hide__on__mobile {
+        display: none;
+    }
+}
+
+.emptySpace {
+    margin-bottom: 5vh;
+}

@@ -1,0 +1,167 @@
+.aluno__dashboard header {
+    background-color: #090446;
+    color: white;
+    width: 100%;
+    display: flex;
+    height: 60px;
+}
+
+#user__header__logo {
+    cursor: pointer;    
+    font-size: 25px;   
+    margin: 0;
+}
+
+
+
+
+
+.aluno__dashboard header .newsletter__form {
+    display: flex;
+    flex-direction: row;     
+}
+.aluno__dashboard header input {
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid white;
+    border-right: 0px solid white;        
+
+    color: white;    
+}
+.aluno__dashboard header input:focus {
+    background-color: transparent;
+    border: 1px solid white;
+    border-right: 0px solid white;        
+    
+    box-shadow: none;
+    color: white;
+}
+.aluno__dashboard header #header__item__02 button, button:hover {
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid white;
+    border-left: 0px solid white;    
+}
+.aluno__dashboard header #header__item__02 button:hover {
+    border-radius: 0;
+    background-color: #090446;
+    border: 1px solid white;
+    border-left: 0px solid white;    
+}
+
+
+
+
+
+
+
+#menu__perfil {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#pic__usuario {
+    align-self: center;
+    padding-left: 6px;
+    font-size: 40px;
+}
+#down__icon {
+    align-self: center;
+}
+#nome__usuario {
+    align-self: center;
+}
+#header__item__04 button {
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+}
+button#dropdown-basic.dropdown-toggle.btn.btn-success::after {
+    content: none;
+}
+
+#header__item__01 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#header__item__01 span {
+    cursor: pointer;
+    align-self: center;
+    font-size: larger;
+}
+#header__item__02 {
+    flex: 2;
+}
+#header__item__03 {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+#header__item__03 span {
+    align-self: center;
+}
+#header__item__03 #notif__bell {
+    font-size: larger;
+    padding-left: 25px;
+    cursor: pointer;
+}
+#header__item__04 {
+    flex: 1;
+}
+
+.aluno__dashboard header .header__flex__item {
+    align-self: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    #header__item__02 {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboard__content #section__01 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffe185;
+}
+
+.dashboard__content #section__01 #banner {
+    align-self: center;
+}
+
+.dashboard__content #section__02 {
+    width: 100%;
+}
+
+.dashboard__content #section__02 .card__group {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow: scroll;
+}
+
+.dashboard__content #section__02 .card__group .my__card{
+    margin: 16px;
+}

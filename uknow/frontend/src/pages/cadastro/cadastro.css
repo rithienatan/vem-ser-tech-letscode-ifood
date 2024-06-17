@@ -1,0 +1,15 @@
+.login{
+    background-image: url("../../../public/Background.png");
+    background-size: cover;
+}
+
+.asidecadastro{
+    padding: 2em;
+    background-color: #e1efe6;
+    width: 300px;
+    height: 100vh;
+}
+
+.forms {
+    background-color: #aeb7b3 !important;
+}
